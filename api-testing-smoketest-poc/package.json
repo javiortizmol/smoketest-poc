@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "Api Testing POC - AWS API Rest",
   "scripts": {
-    "smoke-test": "export ENVIRONMENT=$npm_config_environment && ./node_modules/.bin/mocha --forbid-only --reporter mocha-simple-html-reporter --reporter-options output=report.html"
+    "smoke-test": "export ENVIRONMENT=$npm_config_environment && ./node_modules/.bin/mocha --forbid-only --reporter mocha-simple-html-reporter --reporter-options output=report_$npm_config_build.html",
+    "smoke-test-xml": "export ENVIRONMENT=$npm_config_environment && ./node_modules/.bin/mocha --forbid-only --reporter mocha-junit-reporter --reporter-options mochaFile=report_$npm_config_build.xml"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "mocha": "^9.0.3",
+    "mocha-junit-reporter": "~2.0.0",
     "mocha-simple-html-reporter": "^2.0.0",
     "pactum": "^3.0.18"
   },
