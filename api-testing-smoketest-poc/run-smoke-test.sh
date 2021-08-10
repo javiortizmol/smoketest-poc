@@ -1,6 +1,7 @@
 #!/bin/bash
 environment="$1"
 
+npm install
 
 npm run smoke-test --environment=$environment
 retVal=$?

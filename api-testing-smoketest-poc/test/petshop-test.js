@@ -17,7 +17,7 @@ describe('Testing AWS Pets Service', function(){
           price: 249.99    
         })    
         .expectStatus(200)
-        .expectResponseTime(30);
+        .expectResponseTime(3000);
     });
     
     it('Getting pets', async () => {
