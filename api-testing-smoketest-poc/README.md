@@ -12,9 +12,13 @@ This tool was selected regarding to the comparative dashboard presents on this l
 
 ### For local environment
 ```
-npm run smoke-test
+./run-smoke-test.sh
 ```
 ### For environments
+The shell script support these variables:
+1. environment; Could be develop, qa, prod, staging or the name that you want to send there.
+2. format; Only support xml or html format, by default is html format.
+3. build_id; This variable could be usage to send the pipeline build id.
 ```
-npm run smoke-test --environment=develop
+./run-smoke-test.sh develop xml 10
 ```
