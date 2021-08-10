@@ -1,0 +1,18 @@
+{
+  "name": "api-testing-poc",
+  "version": "1.0.0",
+  "description": "Api Testing POC - AWS API Rest",
+  "scripts": {
+    "smoke-test": "export ENVIRONMENT=$npm_config_environment && ./node_modules/.bin/mocha --forbid-only --reporter mocha-simple-html-reporter --reporter-options output=report.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^9.0.3",
+    "mocha-simple-html-reporter": "^2.0.0",
+    "pactum": "^3.0.18"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
