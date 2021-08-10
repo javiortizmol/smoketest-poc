@@ -6,6 +6,7 @@ This tool was selected regarding to the comparative dashboard presents on this l
 # Content of the project
 
 - .env files - Contains the env variables referenced on the test cases per environment.
+- [run-smoke-test.sh](run-smoke-test.sh) - It is the shell tool develop to run the smoket test
 - [test](test) - This folder contains the test cases automated using [pactum](https://pactumjs.github.io/#/) and [mocha](https://mochajs.org/)
 
 # How to run it?
